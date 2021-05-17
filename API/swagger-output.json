@@ -1,0 +1,66 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Backend",
+    "description": "Documentation"
+  },
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "User",
+      "description": "Endpoints"
+    }
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "securityDefinitions": {
+    "JWT": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Authorization",
+      "description": ""
+    }
+  },
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {},
+  "definitions": {
+    "UserLogin": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "example": "jhon@example.com"
+        },
+        "password": {
+          "type": "string",
+          "example": "**********"
+        }
+      }
+    },
+    "UserRegister": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "example": "JohnDoe"
+        },
+        "email": {
+          "type": "string",
+          "example": "jhon@example.com"
+        },
+        "password": {
+          "type": "string",
+          "example": "**********"
+        }
+      }
+    }
+  }
+}
